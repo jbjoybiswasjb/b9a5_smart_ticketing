@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Meta tags. -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Page title. -->
+        <title></title>
+
+        <!-- Tailwind CSS and Daisy UI CDN. -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Main CSS. -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Custom color and others custom things. -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                            commonHeadingColor: '#030712',
+                            navItemColor: 'rgba(3, 7, 18, 0.7)',
+                            green: '#1DD100',
+                            whiteColor: '#ffffff',
+                        }
+                    }
+                }
+            }
+        </script>
+
+    </head>
+
+    <body class="md:container mx-auto  px-2 md:px-5 lg:px-8">
+
+        <!-- 
+                                                    Header.
+            ===================================================================================
+         -->
+        <header class="flex justify-between items-center mt-2 md:mt-6 lg:mt-12 mb-3 lg:mb-7">
+            <div class="md:hidden lg:hidden">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="raleway-extrabold text-2xl md:text-3xl lg:text-4xl text-commonHeadingColor">
+                    <a href="#">P-Ticket</a>
+                </h3>
+            </div>
+
+            <div class="p-2 hidden md:block lg:block">
+                <nav class="raleway-medium text-lg text-navItemColor">
+                    <ul class="flex gap-14">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="border-[#1DD100]/40 border rounded-xl bg-[#1DD100]/10">
+                <a href="#"  class="flex items-center gap-2 lg:gap-3 px-4 md:px-6 lg:px-8 py-2 md:py-2 lg:py-4">
+                    <span class="text-green text-xl raleway-bold">Bus</span>
+                    <img src="images/bus-icon.png" alt="Bus icon." title="Bus image.">
+                </a>
+            </div>
+        </header>
+
+        <!-- 
+                                                    Main.
+            ===================================================================================
+         -->
+        <main>
+
+            <!-- 
+                                                Banner section.
+                ===============================================================================
+             -->
+            <section id="p_ticket_banner">
+                <div class="hero rounded-[1em] lg:rounded-[2em] pb-32"
+                    style="background-image: url(images/banner.png);">
+                    <div class="hero-content text-center text-neutral-content mt-[.5em] md:mt-[3em] lg:mt-[4.5em]">
+                        <div class="space-y-2 lg:space-y-4">
+                            <h1 class="raleway-extrabold text-[2.5em] md:text-[3em] lg:text-[4em] text-whiteColor">End-to-End Travel with</h1>
+                            <h2 class="raleway-extrabold text-[2.5em] md:text-[3em] lg:text-[4em] text-green">P Paribahan</h1>
+                            <p class="text-lg inter-regular text-whiteColor max-w-2xl mx-auto pb-8">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a
+                            streamlined ..</p>
+                            <button class="btn flex-nowrap px-7 py-5 bg-green text-xl raleway-bold rounded-xl text-commonHeadingColor border-none h-auto">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-4/5 h-3/4 mx-auto -translate-y-24 mt-4 gap-4 md:gap-2 lg:gap-7 md:-translate-y-2/4 flex flex-col md:flex-row justify-between">
+                    <div class="bg-whiteColor rounded-3xl border-b-4 border-b-green p-4 lg:p-9 flex justify-between items-center gap-4">
+                        <div>
+                            <img src="images/people.png" alt="People Image." title="People Image.">
+                        </div>
+                        <div>
+                            <h3 class="inter-bold text-2xl lg:text-4xl text-commonHeadingColor mb-2">500K+</h3>
+                            <p class="inter-regular text-lg text-[#03071299]/60">Registered users</p>
+                        </div>
+                    </div>
+                    <div class="bg-whiteColor rounded-3xl border-b-4 border-b-green p-4 lg:p-9 flex justify-between items-center gap-4">
+                        <div>
+                            <img src="images/ticket-cupon.png" alt="Ticket Image" title="Ticket Image">
+                        </div>
+                        <div>
+                            <h3 class="inter-bold text-2xl lg:text-4xl text-commonHeadingColor mb-2">1.7 lacks</h3>
+                            <p class="inter-regular text-lg text-[#03071299]/60">Tickets sold</p>
+                        </div>
+                    </div>
+                    <div class="bg-whiteColor rounded-3xl border-b-4 border-b-green p-4 lg:p-9 flex justify-between items-center gap-4">
+                        <div>
+                            <img src="images/stoppage.png" alt="Bus stoppage Image." title="Bus stoppage Image.">
+                        </div>
+                        <div>
+                            <h3 class="inter-bold text-2xl lg:text-4xl text-commonHeadingColor mb-2">80K+</h3>
+                            <p class="inter-regular text-lg text-[#03071299]/60">Rental partners</p>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+        </main>
+
+        <!-- 
+                                                    Footer.
+            ===================================================================================
+         -->
+        <footer></footer>
+
+
+        <!-- JavaScript. -->
+        <script src="tailwind.config.js"></script>
+        <script src="js/index.js"></script>
+
+    </body>
+
+</html>
