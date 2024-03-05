@@ -8,7 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Page title. -->
-        <title></title>
+        <title>P Paribahan</title>
+
+        <link rel="shortcut icon" href="images/bus-icon.png" type="image/x-icon">
 
         <!-- Tailwind CSS and Daisy UI CDN. -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -28,6 +30,8 @@
                             navItemColor: 'rgba(3, 7, 18, 0.7)',
                             green: '#1DD100',
                             whiteColor: '#ffffff',
+                            leftCouponBgColor: '#FFBF0F',
+                            rightCouponBgColor: '#F78C9C',
                         }
                     }
                 }
@@ -48,10 +52,12 @@
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
                         </svg>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Destination</a></li>
@@ -78,12 +84,16 @@
             </div>
 
             <div class="border-[#1DD100]/40 border rounded-xl bg-[#1DD100]/10">
-                <a href="#"  class="flex items-center gap-2 lg:gap-3 px-4 md:px-6 lg:px-8 py-2 md:py-2 lg:py-4">
+                <a href="#" class="flex items-center gap-2 lg:gap-3 px-4 md:px-6 lg:px-8 py-2 md:py-2 lg:py-4">
                     <span class="text-green text-xl raleway-bold">Bus</span>
                     <img src="images/bus-icon.png" alt="Bus icon." title="Bus image.">
                 </a>
             </div>
         </header>
+
+
+
+
 
         <!-- 
                                                     Main.
@@ -96,21 +106,32 @@
                 ===============================================================================
              -->
             <section id="p_ticket_banner">
+
+                <!-- Banner. -->
                 <div class="hero rounded-[1em] lg:rounded-[2em] pb-32"
                     style="background-image: url(images/banner.png);">
                     <div class="hero-content text-center text-neutral-content mt-[.5em] md:mt-[3em] lg:mt-[4.5em]">
                         <div class="space-y-2 lg:space-y-4">
-                            <h1 class="raleway-extrabold text-[2.5em] md:text-[3em] lg:text-[4em] text-whiteColor">End-to-End Travel with</h1>
-                            <h2 class="raleway-extrabold text-[2.5em] md:text-[3em] lg:text-[4em] text-green">P Paribahan</h1>
-                            <p class="text-lg inter-regular text-whiteColor max-w-2xl mx-auto pb-8">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a
-                            streamlined ..</p>
-                            <button class="btn flex-nowrap px-7 py-5 bg-green text-xl raleway-bold rounded-xl text-commonHeadingColor border-none h-auto">Buy Tickets</button>
+                            <h1 class="raleway-extrabold text-[2.5em] md:text-[3em] lg:text-[4em] text-whiteColor">
+                                End-to-End Travel with</h1>
+                            <h2 class="raleway-extrabold text-[2.5em] md:text-[3em] lg:text-[4em] text-green">P
+                                Paribahan</h1>
+                                <p class="text-lg inter-regular text-whiteColor max-w-2xl mx-auto pb-8">Yes, you can run
+                                    unit tests and view the results directly within the app. The integrated testing
+                                    features allow for a
+                                    streamlined ..</p>
+                                <button
+                                    class="btn flex-nowrap px-7 py-5 bg-green text-xl raleway-bold rounded-xl text-commonHeadingColor border-none h-auto">Buy
+                                    Tickets</button>
                         </div>
                     </div>
                 </div>
-                
-                <div class="w-4/5 h-3/4 mx-auto -translate-y-24 mt-4 gap-4 md:gap-2 lg:gap-7 md:-translate-y-2/4 flex flex-col md:flex-row justify-between">
-                    <div class="bg-whiteColor rounded-3xl border-b-4 border-b-green p-4 lg:p-9 flex justify-between items-center gap-4">
+
+                <!-- Reviews. -->
+                <div
+                    class="w-4/5 h-3/4 mx-auto -translate-y-24 mt-4 gap-4 md:gap-2 lg:gap-7 md:-translate-y-2/4 flex flex-col md:flex-row justify-between">
+                    <div
+                        class="bg-whiteColor rounded-3xl border-b-4 border-b-green p-4 lg:p-9 flex justify-between items-center gap-4 w-full">
                         <div>
                             <img src="images/people.png" alt="People Image." title="People Image.">
                         </div>
@@ -119,7 +140,8 @@
                             <p class="inter-regular text-lg text-[#03071299]/60">Registered users</p>
                         </div>
                     </div>
-                    <div class="bg-whiteColor rounded-3xl border-b-4 border-b-green p-4 lg:p-9 flex justify-between items-center gap-4">
+                    <div
+                        class="bg-whiteColor rounded-3xl border-b-4 border-b-green p-4 lg:p-9 flex justify-between items-center gap-4 w-full">
                         <div>
                             <img src="images/ticket-cupon.png" alt="Ticket Image" title="Ticket Image">
                         </div>
@@ -128,7 +150,8 @@
                             <p class="inter-regular text-lg text-[#03071299]/60">Tickets sold</p>
                         </div>
                     </div>
-                    <div class="bg-whiteColor rounded-3xl border-b-4 border-b-green p-4 lg:p-9 flex justify-between items-center gap-4">
+                    <div
+                        class="bg-whiteColor rounded-3xl border-b-4 border-b-green p-4 lg:p-9 flex justify-between items-center gap-4 w-full">
                         <div>
                             <img src="images/stoppage.png" alt="Bus stoppage Image." title="Bus stoppage Image.">
                         </div>
@@ -138,9 +161,76 @@
                         </div>
                     </div>
                 </div>
-            </section> 
+
+            </section>
+
+
+            <!-- 
+                                                Best offer section.
+                ===============================================================================
+             -->
+            <section id="best_offer" class="mb-[120px]">
+
+                <!-- Best offer heading. -->
+                <h3 class="text-center raleway-bold text-[2.5em] text-commonHeadingColor mb-12">Best offers for you</h3>
+
+                <!-- Best coupon. -->
+                <div class="flex flex-col lg:flex-row justify-between gap-6">
+
+                    <!-- Coupon left -->
+                    <div class="flex bg-leftCouponBgColor rounded-3xl w-full">
+                        <div class="p-3 sm:p-12 md:p-12 lg:p-10 xl:p-12">
+                            <h3 class="inter-black text-[2.5em] text-commonHeadingColor/80">15% OFF</h3>
+                            <p class="inter-semibold text-xl text-commonHeadingColor/80">on your next purchase</p>
+                            <p class="inter-medium text-lg text-commonHeadingColor/60">use by January 2024</p>
+                        </div>
+                        <div>
+                            <img src="images/cupon-devider.png" alt="Coupon devider" title="Coupon devider Image."
+                                class="h-full">
+                        </div>
+                        <div class="pl-1 md:pl-4 lg:pl-5 pr-2 md:pr-6 lg:pr-8 text-center flex justify-center items-center">
+                            <div class="text-center">
+                                <h3 class="raleway-bold text-[2em] text-commonHeadingColor">NEW15</h3>
+                                <p class="raleway-medium text-xl text-commonHeadingColor/40">Coupon Code</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coupon right. -->
+                    <div class="flex bg-rightCouponBgColor rounded-3xl w-full">
+                        <div class="p-3 sm:p-12 md:p-12 lg:p-10 xl:p-12">
+                            <h3 class="inter-black text-[2.5em] text-commonHeadingColor/80">20% OFF</h3>
+                            <p class="inter-semibold text-xl text-commonHeadingColor/80">on your next purchase</p>
+                            <p class="inter-medium text-lg text-commonHeadingColor/60">use by January 2024</p>
+                        </div>
+                        <div>
+                            <img src="images/cupon-devider.png" alt="Coupon devider" title="Coupon devider Image."
+                                class="h-full">
+                        </div>
+                        <div class="pl-1 md:pl-4 lg:pl-5 pr-2 md:pr-6 lg:pr-8 text-center flex justify-center items-center">
+                            <div class="text-center">
+                                <h3 class="raleway-bold text-[2em] text-commonHeadingColor"> Couple 20 </h3>
+                                <p class="raleway-medium text-xl text-commonHeadingColor/40">Coupon Code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Best offer button. -->
+                <div class="text-center mt-14">
+                    <button
+                        class="btn btn-primary border border-green hover:border-green py-5 px-[30px] rounded-xl hover:bg-green bg-transparent text-green text-xl raleway-bold hover:text-commonHeadingColor h-auto flex-nowrap">See
+                        All Offers
+                    </button>
+                </div>
+
+            </section>
 
         </main>
+
+
+
+
 
         <!-- 
                                                     Footer.
