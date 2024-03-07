@@ -32,6 +32,7 @@
                             whiteColor: '#ffffff',
                             leftCouponBgColor: '#FFBF0F',
                             rightCouponBgColor: '#F78C9C',
+                            PhParibahanBgColor: '#F7F8F8',
                         }
                     }
                 }
@@ -40,13 +41,14 @@
 
     </head>
 
-    <body class="md:container mx-auto  px-2 md:px-5 lg:px-8">
+    <body class="bg-whiteColor">
 
         <!-- 
                                                     Header.
             ===================================================================================
          -->
-        <header class="flex justify-between items-center mt-2 md:mt-6 lg:mt-12 mb-3 lg:mb-7">
+        <header
+            class="md:container mx-auto  px-2 md:px-5 lg:px-8 flex justify-between items-center mt-2 md:mt-6 lg:mt-12 mb-3 lg:mb-7">
             <div class="md:hidden lg:hidden">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -105,7 +107,7 @@
                                                 Banner section.
                 ===============================================================================
              -->
-            <section id="p_ticket_banner">
+            <section id="p_ticket_banner" class="md:container mx-auto  px-2 md:px-5 lg:px-8 ">
 
                 <!-- Banner. -->
                 <div class="hero rounded-[1em] lg:rounded-[2em] pb-32"
@@ -169,7 +171,7 @@
                                                 Best offer section.
                 ===============================================================================
              -->
-            <section id="best_offer" class="mb-[120px]">
+            <section id="best_offer" class="md:container mx-auto  px-2 md:px-5 lg:px-8 mb-[120px]">
 
                 <!-- Best offer heading. -->
                 <h3 class="text-center raleway-bold text-[2.5em] text-commonHeadingColor mb-12">Best offers for you</h3>
@@ -179,7 +181,7 @@
 
                     <!-- Coupon left -->
                     <div class="flex bg-leftCouponBgColor rounded-3xl w-full">
-                        <div class="p-6 sm:p-16 md:p-12 lg:p-10 xl:p-12">
+                        <div class="m-auto p-6 sm:p-16 md:p-12 lg:p-10 xl:p-12">
                             <h3 class="inter-black text-[2.5em] text-commonHeadingColor/80">15% OFF</h3>
                             <p class="inter-semibold text-xl text-commonHeadingColor/80">on your next purchase</p>
                             <p class="inter-medium text-lg text-commonHeadingColor/60">use by January 2024</p>
@@ -188,7 +190,8 @@
                             <img src="images/cupon-devider.png" alt="Coupon devider" title="Coupon devider Image."
                                 class="h-full">
                         </div>
-                        <div class="pl-1 md:pl-4 lg:pl-5 pr-2 md:pr-6 lg:pr-8 text-center flex justify-center items-center">
+                        <div
+                            class="m-auto pl-1 md:pl-4 lg:pl-5 pr-2 md:pr-6 lg:pr-8 text-center flex justify-center items-center">
                             <div class="text-center">
                                 <h3 class="raleway-bold text-[2em] text-commonHeadingColor">NEW15</h3>
                                 <p class="raleway-medium text-xl text-commonHeadingColor/40">Coupon Code</p>
@@ -198,7 +201,7 @@
 
                     <!-- Coupon right. -->
                     <div class="flex bg-rightCouponBgColor rounded-3xl w-full">
-                        <div class="p-6 sm:p-16 md:p-12 lg:p-10 xl:p-12">
+                        <div class="m-auto p-6 sm:p-16 md:p-12 lg:p-10 xl:p-12">
                             <h3 class="inter-black text-[2.5em] text-commonHeadingColor/80">20% OFF</h3>
                             <p class="inter-semibold text-xl text-commonHeadingColor/80">on your next purchase</p>
                             <p class="inter-medium text-lg text-commonHeadingColor/60">use by January 2024</p>
@@ -207,8 +210,9 @@
                             <img src="images/cupon-devider.png" alt="Coupon devider" title="Coupon devider Image."
                                 class="h-full">
                         </div>
-                        <div class="pl-1 md:pl-4 lg:pl-5 pr-2 md:pr-6 lg:pr-8 text-center flex justify-center items-center">
-                            <div class="text-center">
+                        <div
+                            class="pl-1 m-auto md:pl-4 lg:pl-5 pr-2 md:pr-6 lg:pr-8 text-center flex justify-center items-center">
+                            <div class="text-center mx-auto">
                                 <h3 class="raleway-bold text-[2em] text-commonHeadingColor">Couple 20</h3>
                                 <p class="raleway-medium text-xl text-commonHeadingColor/40">Coupon Code</p>
                             </div>
@@ -231,6 +235,239 @@
                                                 P.H Paribahan Section.
                 ===============================================================================
              -->
+            <section
+                class="2xl:container mx-auto py-4 md:py-20 lg:py-[120px] px-1 md:px-24 lg:px-[135px] bg-PhParibahanBgColor border-t-4 border-green rounded-t-[2.5em] md:rounded-t-[60px] lg:rounded-t-[88px]">
+
+                <!-- P.H Paribahan text. -->
+                <div class="text-center w-5/6 lg:w-2/3 mx-auto mb-11">
+                    <h3 class="text-[2.5em] raleway-bold text-commonHeadingColor mb-6">P.H Paribahan</h3>
+                    <p class="inter-regular text-lg text-commonHeadingColor/60">Yes, you can run unit tests and view the
+                        results directly within the app. The integrated testing features allow for a
+                        streamlined .</p>
+                </div>
+
+                <!-- Ticket first part. -->
+                <div class="flex flex-col lg:flex-row bg-whiteColor rounded-3xl py-8 lg:py-0">
+                    <div class="p-2 md:p-4 lg:p-8 flex-grow">
+                        <div class="flex gap-4 flex-col lg:flex-row justify-between items-center">
+                            <div class="flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-3">
+                                <img src="images/bus-logo.png" alt="Bus logo photo." title="Bus logo image.">
+                                <div class="text-center lg:text-left">
+                                    <h3 class="raleway-bold text-lg lg:text-[32px] text-commonHeadingColor">Greenline
+                                        Paribahan</h3>
+                                    <p class="text-commonHeadingColor/60 text-lg inter-regular">Coach-009-WEB !
+                                        AC_Business</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="rounded-xl bg-[#1DD100]/15 flex">
+                                    <a href="#"
+                                        class="flex items-center gap-1 lg:gap-2 px-2 md:px-3 lg:px-4 py-1 md:py-3 lg:py-4">
+                                        <img src="images/seat-green.png" alt="Bus icon." title="Bus image.">
+                                        <span class="text-green text-lg inter-medium">40 Seats left</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-[1.5em] bg-PhParibahanBgColor p-8 mt-6">
+                            <div class="flex justify-between pb-6 text-lg raleway-semibold">
+                                <span class="text-commonHeadingColor/60">Route</span>
+                                <span class="text-commonHeadingColor">Dhaka - Sylhet</span>
+                            </div>
+                            <hr class="border border-commonHeadingColor/20 border-dashed">
+                            <div class="flex justify-between py-6 text-lg raleway-semibold">
+                                <span class="text-commonHeadingColor/60">Departure Time</span>
+                                <span class="text-commonHeadingColor">9:00 PM</span>
+                            </div>
+                            <hr class="border border-commonHeadingColor/20 border-dashed">
+                            <div
+                                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-6 text-commonHeadingColor/80 text-base inter-medium gap-6">
+                                <button class="flex justify-center btn rounded-xl bg-commonHeadingColor/5 px-6 py-5 h-auto">Boarding Point -
+                                    Laxmipur</button>
+                                <button class="flex justify-center btn rounded-xl bg-commonHeadingColor/5 px-6 py-5 h-auto">Dropping Point -
+                                    Bogura</button>
+                                <button class="flex justify-center btn rounded-xl bg-commonHeadingColor/5 px-6 py-5 h-auto">Est. Time - 11
+                                    Hour</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/info-devider.png" alt="Info devider." title="Info devider image."
+                            class="h-full mx-auto">
+                    </div>
+                    <div class="w-full lg:w-2/12 text-center flex items-center lg:pr-3">
+                        <div class="mx-auto lg:mx-0">
+                            <img src="images/fare.png" alt="Fare photo." title="Fare image." class="inline-block">
+                            <h3 class="raleway-bold text-[2em] text-commonHeadingColor">550 Taka</h3>
+                            <p class="raleway-semibold text-2xl text-commonHeadingColor/60">Per Seat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ticket second part. -->
+                <div class="flex flex-col lg:flex-row p-2 md:p-4 lg:p-8 bg-whiteColor mt-6 bg-whiteColor rounded-3xl gap-10">
+
+                    <!-- Select seat. -->
+                    <div class="lg:border-r-4 border-dashed pr-0 lg:pr-8 border-commonHeadingColor/30">
+                        <h3 class="text-commonHeadingColor text-2xl raleway-semibold">Select Your Seat</h3>
+                        <hr class="border border-dashed border-commonHeadingColor/20 mt-6">
+                        <div class="inter-medium text-lg flex justify-between py-5">
+                            <div class="flex items-center">
+                                <img src="images/seat-gray.png" alt="Available seat icon."
+                                    title="Available seat Image.">
+                                <span class=" text-commonHeadingColor/50 pl-2">Available</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="images/seat-green-filled.png" alt="Selected seat icon."
+                                    title="Selected seat image.">
+                                <span class=" text-green pl-2">Selected</span>
+                            </div>
+                        </div>
+                        <hr class="border border-dashed border-commonHeadingColor/20">
+                        <div class="my-6 flex justify-end">
+                            <div class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">
+                                <img src="images/wheel.png" alt="Driving wheel icon." title="Driving while image.">
+                            </div>
+                        </div>
+                        <div class="flex justify-center text-lg inter-medium">
+                            <div class="grid grid-cols-1 gap-6 mr-4">
+                                <button class="flex justify-center py-5">A</button>
+                                <button class="flex justify-center py-5">B</button>
+                                <button class="flex justify-center py-5">C</button>
+                                <button class="flex justify-center py-5">D</button>
+                                <button class="flex justify-center py-5">E</button>
+                                <button class="flex justify-center py-5">F</button>
+                                <button class="flex justify-center py-5">G</button>
+                                <button class="flex justify-center py-5">H</button>
+                                <button class="flex justify-center py-5">I</button>
+                                <button class="flex justify-center py-5">J</button>
+                            </div>
+                            <div class="flex justify-between gap-10 lg:gap-16">
+                                <div class="grid grid-cols-2 gap-6 lg:gap-8">
+                                    <div class="grid grid-cols-1 gap-6">
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">A3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">B3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">C3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">D3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">E3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">F3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">G3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">H3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">I3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">J3</button>
+                                    </div>
+                                    <div class="grid grid-cols-1 gap-6">
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">A4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">B4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">C4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">D4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">E4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">F4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">G4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">H4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">I4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">J4</button>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-8">
+                                    <div class="grid grid-cols-1 gap-6">
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">A3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">B3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">C3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">D3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">E3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">F3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">G3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">H3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">I3</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">J3</button>
+                                    </div>
+                                    <div class="grid grid-cols-1 gap-6">
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">A4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">B4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">C4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">D4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">E4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">F4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">G4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">H4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">I4</button>
+                                        <button class="flex justify-center px-5 my-auto md:px-11 py-3 md:py-5 rounded-xl bg-PhParibahanBgColor">J4</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seat price. -->
+                    <div class="flex-1">
+                        <h3 class="text-commonHeadingColor text-2xl raleway-semibold">Select Your Seat</h3>
+                        <hr class="border border-dashed border-commonHeadingColor/20 my-6">
+                        <div class="p-8 bg-PhParibahanBgColor rounded-xl">
+                            <div class="flex justify-between text-base text-commonHeadingColor inter-medium">
+                                <div class="flex gap-1 mb-4">
+                                    <h3 class="inline-block">Seat</h3>
+                                    <span>2</span>
+                                </div>
+                                <h3 class="inline-block">Class</h3>
+                                <h3 class="inline-block">Price</h3>
+                            </div>
+                            <hr class="border border-dashed border-commonHeadingColor/20">
+                            <div class="flex justify-between py-4">
+                                <span>C2</span>
+                                <span>Economoy</span>
+                                <span>550</span>
+                            </div>
+                            <div class="flex justify-between py-4">
+                                <span>C2</span>
+                                <span>Economoy</span>
+                                <span>550</span>
+                            </div>
+                            <hr class="border border-commonHeadingColor/20">
+                            <div class="flex justify-between text-base text-commonHeadingColor inter-medium py-4">
+                                <span>Total Price</span>
+                                <span>BDT 1100</span>
+                            </div>
+                            <div class="mt-4 mb-6 flex flex-col lg:flex-row gap-4 items-center xl:relative">
+                                <div class="xl:w-full">
+                                    <input type="text" class="w-full p-5" placeholder="Have any copupon?">
+                                </div>
+                                <div class="flex justify-center xl:absolute xl:right-2">
+                                    <button
+                                        class="btn flex-nowrap px-4 py-2 bg-green text-base inter-semibold rounded-lg text-whiteColor border-none h-auto">Apply
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Form. -->
+                        <div class="mt-6">
+                            <form action="">
+                                <div class="mb-6">
+                                    <label for="user_name" class="block mb-4 inter-semibold text-base text-commonHeadingColor">Passenger Name*</label>
+                                    <input type="text" id="user_name" placeholder="Enter your name" class="w-full p-6 border border-commonHeadingColor/10 rounded-xl">
+                                </div>
+                                <div class="mb-6">
+                                    <label for="user_number" class="block mb-4 inter-semibold text-base text-commonHeadingColor">Phone Number*</label>
+                                    <input type="number" id="user_number" placeholder="Enter your phone number" class="w-full p-6 border border-commonHeadingColor/10 rounded-xl">
+                                </div>
+                                <div class="mb-6">
+                                    <label for="user_email" class="block mb-4 inter-semibold text-base text-commonHeadingColor">Email ID</label>
+                                    <input type="email" placeholder="Enter your email id" id="user_email" class="w-full p-6 border border-commonHeadingColor/10 rounded-xl">
+                                </div>
+                                <div class="mb-6">
+                                    <button class="w-full raleway-extrabold text-xl text-whiteColor text-center py-5 px-8 bg-green rounded-2xl btn flex-nowrap h-auto">Next</button>
+                                </div>
+                                <div class="inter-regular text-base flex justify-evenly text-commonHeadingColor/60">
+                                    <a href="#" class="underline">Terms and Conditions</a>
+                                    <a href="#" class="underline">Cancellation Policy</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
 
         </main>
 
@@ -242,7 +479,29 @@
                                                     Footer.
             ===================================================================================
          -->
-        <footer></footer>
+        <footer class="2xl:container mx-auto py-10 md:py-20 lg:py-[120px] px-4 md:px-24 lg:px-[135px] bg-commonHeadingColor">
+            <div class="flex flex-col gap-10 text-center md:text-left sm:flex-row justify-between">
+                <div>
+                    <h3 class="text-4xl raleway-extrabold text-whiteColor mb-4">P-Ticket</h3>
+                    <p class="inter-regular text-lg text-whiteColor/80">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl text-whiteColor raleway-semibold mb-5">Download our app</h3>
+                    <a href="#" class="flex justify-center">
+                        <img src="images/google_play_store.png" alt="Google play store icon." title="Google play store icon image.">
+                    </a>
+                </div>
+            </div>
+            <hr class="border-[1.5px] border-whiteColor/30 border-dashed mt-12 mb-8">
+            <div class="text-base flex flex-col md:flex-row justify-between gap-4 text-center">
+                <p class="text-whiteColor/70 inter-regular">@all rights reserved, P-Ticket services limited.2024</p>
+                <ul class="flex flex-col md:flex-row justify-between gap-2 lg:gap-8 text-whiteColor">
+                    <li><a href="#">Terms & condition</a></li>
+                    <li><a href="#">Return & refund policy</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+        </footer>
 
 
         <!-- JavaScript. -->
