@@ -128,4 +128,4 @@ document.getElementById('apply_coupon_button').addEventListener('click', functio
         alert('Please give the valid coupon code.');
         document.getElementById('coupon_input_field').value = '';
     }
-})
+});
