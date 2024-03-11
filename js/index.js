@@ -23,14 +23,8 @@ for (const button of buttonCollection) {
 
         // Seat limitation.
         if (seatNumber > 4) {
-
-            button.style.backgroundColor = '#F7F8F8';
-            button.style.color = '#030712';
-
-            // After click diable the button.
-            button.removeAttribute("disabled");
-
             alert("Please don't select more than 4 seats.");
+            location.reload();
             return;
         }
 
@@ -88,10 +82,8 @@ for (const button of buttonCollection) {
 
         document.getElementById('grand_total_seat_price').innerText = grandTotalSeatsPrice;
 
-
         // After click diable the button.
         button.setAttribute("disabled", false);
-
     })
 }
 
