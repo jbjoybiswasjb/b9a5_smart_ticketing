@@ -15,7 +15,7 @@ for (const button of buttonCollection) {
         button.style.color = 'white';
 
         // For show the selected seat name.
-        const seatName = button.innerText
+        const seatName = button.innerText;
 
 
         // For calculate the selected seat number.
@@ -27,8 +27,6 @@ for (const button of buttonCollection) {
             location.reload();
             return;
         }
-
-        console.log(seatNumber);
 
         if (seatNumber >= 4) {
             const couponButton = document.getElementById('apply_coupon_button');
