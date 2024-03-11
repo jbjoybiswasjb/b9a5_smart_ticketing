@@ -1,5 +1,7 @@
-function buyTickets() {
-    openTicket();
+// Open Ticket.
+function openTicket(elementId) {
+    const ticketSection = document.getElementById(elementId);
+    ticketSection.scrollIntoView();
 }
 
 
@@ -18,18 +20,36 @@ for (const button of buttonCollection) {
 
         // For calculate the selected seat number.
         seatNumber += 1;
+
+        // Seat limitation.
+        if (seatNumber > 4) {
+
+            button.style.backgroundColor = '#F7F8F8';
+            button.style.color = '#030712';
+
+            // After click diable the button.
+            button.removeAttribute("disabled");
+
+            alert("Please don't select more than 4 seats.");
+            return;
+        }
+
         document.getElementById('selected_seat_number').innerText = seatNumber;
 
 
         // Show the left seats number.
         const leftSeatNumber = covertTextToNumberById('seat_left');
         const leftSeat = leftSeatNumber - 1;
+
+        // limite the left seat number.
+        if (leftSeat < 0) {
+            alert('No seat left.');
+            return;
+        }
         document.getElementById('seat_left').innerText = leftSeat;
 
 
-
-
-        // Show the Selected seats Information.
+        // Show the selected seats information.
         const perSeatPrice = covertTextToNumberById('per_seat_price');
 
         const seatsInfoElement = document.getElementById('total_seat_info');
@@ -67,9 +87,29 @@ for (const button of buttonCollection) {
         grandTotalSeatsPrice = totalSeatsPrice;
 
         document.getElementById('grand_total_seat_price').innerText = grandTotalSeatsPrice;
+
+
+        // After click diable the button.
+        button.setAttribute("disabled", false);
+
     })
 }
 
+// Enable next button.
+const phoneNumberField = document.getElementById('user_number');
+phoneNumberField.addEventListener('keyup', function () {
+    if (seatNumber === 0) {
+        alert('Please at first select a seat.');
+        phoneNumberField.value = '';
+    }
+    const phoneNumberValue = phoneNumberField.value;
+    const lengthOfPhoneNumberValue = phoneNumberValue.length;
+
+    if ((seatNumber >= 1) && (lengthOfPhoneNumberValue >= 1)) {
+        const nextButton = document.getElementById('next_button');
+        nextButton.removeAttribute("disabled");
+    }
+});
 
 
 // Apply coupon.
@@ -85,10 +125,15 @@ document.getElementById('apply_coupon_button').addEventListener('click', functio
     const givenText = document.getElementById('coupon_input_field').value;
 
     if (givenText === new15) {
-        priceAfterDiscount(15);
+        afterDiscount(15);
     }
 
     else if (givenText === couple20) {
-        priceAfterDiscount(20);
+        afterDiscount(20);
+    }
+
+    else {
+        alert('Please give the valid coupon code.');
+        document.getElementById('coupon_input_field').value = '';
     }
 })
