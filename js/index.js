@@ -28,6 +28,13 @@ for (const button of buttonCollection) {
             return;
         }
 
+        console.log(seatNumber);
+
+        if (seatNumber >= 4) {
+            const couponButton = document.getElementById('apply_coupon_button');
+            couponButton.removeAttribute('disabled');
+        }
+
         document.getElementById('selected_seat_number').innerText = seatNumber;
 
 
