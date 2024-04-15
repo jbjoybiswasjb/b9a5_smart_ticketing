@@ -40,7 +40,7 @@ for (const button of buttonCollection) {
         const leftSeatNumber = covertTextToNumberById('seat_left');
         const leftSeat = leftSeatNumber - 1;
 
-        // limite the left seat number.
+        // limit the left seat number.
         if (leftSeat < 0) {
             alert('No seat left.');
             return;
