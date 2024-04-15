@@ -87,7 +87,7 @@ for (const button of buttonCollection) {
 
         document.getElementById('grand_total_seat_price').innerText = grandTotalSeatsPrice;
 
-        // After click diable the button.
+        // After click double the button.
         button.setAttribute("disabled", false);
     })
 }
@@ -118,7 +118,7 @@ document.getElementById('apply_coupon_button').addEventListener('click', functio
 
     const couple20 = document.getElementById('couple_20_coupon').innerText;
 
-    // Givent Text.
+    // Given Text.
     const givenText = document.getElementById('coupon_input_field').value;
 
     if (givenText === new15) {
